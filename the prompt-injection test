@@ -1,0 +1,2 @@
+The model was not tricked by the prompt injection. 
+My defence helped the model ignore the fake instructions and focus on the real errors in the logs.
