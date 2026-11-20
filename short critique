@@ -1,0 +1,4 @@
+The model sometimes misunderstood the error messages and gave incorrect explanations.
+It also missed some important details in the logs. 
+I caught these mistakes by checking the model's answers against the original logs and notes. 
+This showed me that AI answers should always be checked by humans.
