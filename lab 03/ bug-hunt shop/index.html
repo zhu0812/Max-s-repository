@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Stationery | Order Online (bug hunt version)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Campus Stationery</h1>
+    <p>Order online. Collect at the counter.</p>
+    <nav><a href="about.html">About us</a></nav>
+  </header>
+
+  <main>
+    <!-- PRODUCTS: one card (article) per item -->
+    <section id="products">
+      <h2>Today's Products</h2>
+      <div class="product-grid">
+        <article class="item">
+          <span class="icon" role="img" aria-label="Notebook">📒</span>
+          <h3>Notbook</h3>
+          <p class="price">¥12</p>
+          <button class="add" data-name="Notebook" data-price="12">Add</button>
+        </article>
+        <article class="item">
+          <span class="icon" role="img" aria-label="Ruler">📏</span>
+          <h3>Ruler</h3>
+          <p class="price">¥8</p>
+          <button class="ad" data-name="Ruler" data-price="8">Add</button>
+        </article>
+        <article class="item">
+          <span class="icon" role="img" aria-label="Three pens">🖊️</span>
+          <h3>Pens (3)</h3>
+          <p class="price">¥6</p>
+          <button class="add" data-name="Pens (3)" data-price="60">Add</button>
+        </article>
+        <article class="item">
+          <span class="icon" role="img" aria-label="Printer">🖨️</span>
+          <h3>Printing (50 pages)</h3>
+          <p class="price">¥51</p>
+          <button class="add" data-name="Printing (50 pages)" data-price="15">Add</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- ORDER: what you picked, the total, and the form -->
+    <section id="order">
+      <h2>Your Order</h2>
+      <ul id="order-list">
+        <li class="empty">Nothing added yet.</li>
+      </ul>
+      <p class="total">Total: ¥<span id="total">0</span></p>
+
+      <form id="order-form">
+        <label for="name">Your name</label>
+        <input type="text" id="name">
+
+        <label for="pickup">Pick-up time</label>
+        <select id="pickup" required>
+          <option value="">Choose a time</option>
+          <option>12:00</option>
+          <option>12:15</option>
+          <option>12:30</option>
+          <option>12:45</option>
+          <option>18:00</option>
+        </select>
+
+        <button type="submit">Place order</button>
+      </form>
+
+      <p id="message" class="message" hidden></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Campus Stationery, Library ground floor · Open 8:30 to 17:30</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
